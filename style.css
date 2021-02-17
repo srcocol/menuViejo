@@ -1,0 +1,721 @@
+:root {
+  --rojo: #C13135;
+  --amarillo: #FBB547;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-image: url(./Images/Fondo.jpg);
+  background-attachment: scroll;
+  background-repeat: repeat;
+  font-family: 'Rancho', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 62.5%;
+  color: white;
+}
+h1 {
+  font-size: 5.2rem;
+  line-height: 79px;
+}
+h2 {
+  font-size: 3.0rem;
+  line-height: 45px;
+}
+p {
+  font-size: 1.8rem;
+  line-height: 22px;
+}
+li {
+  font-size: 2.2rem;
+  line-height: 27px;
+  list-style: none;
+}
+.elemento-largo {
+  font-size: 1.8rem;
+}
+header{
+  width: 100%;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+}
+header .header-barra {
+  display: flex;
+  justify-content: center;
+}
+.barra-amarilla {
+  position: absolute;
+  width: 100%;
+  height: 56px;
+  top: 69px;
+  background-color: var(--amarillo);
+}
+.fondo-rojo {
+  background-color: var(--rojo);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  width: 215px;
+  height: 164px;
+  top: 14px;
+  left: calc(50% - 215px/2);
+  border-radius: 23px;
+}
+.fondo-rojo img {
+  width: 175px;
+  height: 152px;
+  margin: 5px 20px;
+}
+.header-title {
+  position: absolute;
+  width: 152px;
+  height: 80px;
+  left: calc(50% - 152px/2);
+  top: 187px;
+}
+.header-title h1 {
+  margin: 8px 12px;
+  text-align: center;
+}
+.header-title span {
+  position: absolute;
+  width: 152px;
+  height: 0px;
+  bottom: 0px;
+  border: 1px solid var(--amarillo);
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+main .container {
+  width: 90%;
+  min-width: 150px;
+  background-color: var(--rojo);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 36px;
+  margin-bottom: 9px;
+  padding: 15px 10px;
+}
+
+.tortas {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tortas-title {
+  position: absolute;
+  width: 160px;
+  height: 42px;
+
+}
+.tortas-title span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  top: 35px;
+  background-color: var(--amarillo);
+}
+.tortas-title h2 {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+}
+
+.tortas-precios-normal, .tortas-precios-minis ul {
+  text-align: center;
+}
+
+.tortas-productos {
+  width: 60%;
+  height: auto;
+  margin-top: 77px;
+  bottom: 0;
+}
+.tortas-precios-normal, .tortas-precios-minis {
+  width: 20%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.cocolainas {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.cocolainas img {
+  position: absolute;
+  width: 180px;
+  height: 55.54px;
+}
+.cocolainas-precios-normal, .cocolainas-precios-minis ul {
+  text-align: center;
+}
+
+.cocolainas-productos {
+  width: 60%;
+  height: auto;
+  margin-top: 92px;
+  bottom: 0;
+}
+.cocolainas-precios-normal, .cocolainas-precios-minis {
+  width: 20%;
+  height: auto;
+  margin-top: 65px;
+}
+.cocolainas p {
+  text-align: center;
+  position: relative;
+  width: 131px;
+  height: 22px;
+  left: calc(50% - 131px/2);
+}
+
+.papas {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+.papas-title {
+  position: absolute;
+  width: 160px;
+  height: 42px;
+
+}
+.papas-title span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  top: 35px;
+  background-color: var(--amarillo);
+}
+.papas-title h2 {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+}
+.papas-precios-normal ul {
+  text-align: center;
+}
+
+.papas-productos {
+  width: 70%;
+  height: auto;
+  margin-top: 50px;
+  bottom: 0;
+}
+.papas-precios-normal {
+  width: 30%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.quesadillas {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+.quesadillas-title {
+  position: absolute;
+  width: 160px;
+  height: 42px;
+
+}
+.quesadillas-title span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  top: 35px;
+  background-color: var(--amarillo);
+}
+.quesadillas-title h2 {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+}
+.quesadillas-precios-normal ul {
+  text-align: center;
+}
+
+.quesadillas-productos {
+  width: 70%;
+  height: auto;
+  margin-top: 50px;
+  bottom: 0;
+}
+.quesadillas-precios-normal {
+  width: 30%;
+  height: auto;
+  margin-top: 50px;
+}
+.quesadillas p {
+  text-align: center;
+  position: relative;
+  width: 131px;
+  height: 22px;
+  left: calc(50% - 131px/2);
+}
+
+.tacos {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+.tacos-title {
+  position: absolute;
+  width: 160px;
+  height: 42px;
+
+}
+.tacos-title span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  top: 35px;
+  background-color: var(--amarillo);
+}
+.tacos-title h2 {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+}
+.tacos-precios-normal ul {
+  text-align: center;
+}
+
+.tacos-productos {
+  width: 80%;
+  height: auto;
+  margin-top: 50px;
+  bottom: 0;
+}
+.tacos-precios-normal {
+  width: 20%;
+  height: auto;
+  margin-top: 50px;
+}
+.tacos-productos span {
+  font-size: 1.8rem;
+  line-height: 22px;
+}
+
+.tacos p {
+  text-align: center;
+  position: relative;
+  width: 131px;
+  height: 22px;
+  left: calc(50% - 131px/2);
+}
+
+.tostadas {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+.tostadas-title {
+  position: absolute;
+  width: 160px;
+  height: 42px;
+
+}
+.tostadas-title span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  top: 35px;
+  background-color: var(--amarillo);
+}
+.tostadas-title h2 {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+}
+.tostadas-precios-normal ul {
+  text-align: center;
+}
+
+.tostadas-productos {
+  width: 70%;
+  height: auto;
+  margin-top: 50px;
+  bottom: 0;
+}
+.tostadas-precios-normal {
+  width: 30%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.cocteles {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.cocteles-title {
+  position: absolute;
+  width: 200px;
+  height: 42px;
+
+}
+.cocteles-title span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  top: 35px;
+  background-color: var(--amarillo);
+}
+.cocteles-title h2 {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+}
+
+.cocteles-precios-normal, .cocteles-precios-minis ul {
+  text-align: center;
+}
+
+.cocteles-productos {
+  width: 60%;
+  height: auto;
+  margin-top: 77px;
+  bottom: 0;
+}
+.cocteles-precios-normal, .cocteles-precios-minis {
+  width: 20%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.snacks {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+.snacks-title {
+  position: absolute;
+  width: 160px;
+  height: 42px;
+
+}
+.snacks-title span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  top: 35px;
+  background-color: var(--amarillo);
+}
+.snacks-title h2 {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+}
+.snacks-precios-normal, .alitas-precios-normal ul {
+  text-align: center;
+}
+
+.snacks-productos {
+  width: 80%;
+  height: auto;
+  margin-top: 50px;
+  bottom: 0;
+}
+.snacks-precios-normal {
+  width: 20%;
+  height: auto;
+  margin-top: 50px;
+}
+.snacks-productos span {
+  font-size: 1.8rem;
+  line-height: 22px;
+}
+.snacks p {
+  text-align: center;
+  position: relative;
+  width: 131px;
+  height: 22px;
+  left: calc(50% - 131px/2);
+}
+.snacks-subtitle {
+  position: relative;
+  width: 160px;
+  height: 42px;
+}
+.snacks-subtitle span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  top: 35px;
+  background-color: var(--amarillo);
+}
+.snacks-subtitle h2 {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+}
+.alitas-productos {
+  width: 80%;
+  height: auto;
+  margin-top: 10px;
+  bottom: 0;
+}
+.alitas-precios-normal {
+  width: 20%;
+  height: auto;
+  margin-top: 10px;
+}
+.alitas-productos span {
+  font-size: 1.8rem;
+  line-height: 22px;
+}
+
+.bebidas {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+.bebidas-title {
+  position: absolute;
+  width: 160px;
+  height: 42px;
+
+}
+.bebidas-title span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  top: 35px;
+  background-color: var(--amarillo);
+}
+.bebidas-title h2 {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+}
+.bebidas-precios-normal, .alitas-precios-normal ul {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.bebidas-precios-normal li {
+  font-size: 1.8rem;
+}
+
+.bebidas-productos {
+  width: 60%;
+  height: auto;
+  margin-top: 50px;
+  bottom: 0;
+}
+.bebidas-precios-normal {
+  width: 40%;
+  height: auto;
+  margin-top: 50px;
+}
+.bebidas-productos span {
+  font-size: 1.8rem;
+  line-height: 22px;
+}
+.bebidas p {
+  text-align: center;
+  position: relative;
+  width: 131px;
+  height: 22px;
+  left: calc(50% - 131px/2);
+}
+.bebidas-subtitle {
+  position: relative;
+  width: 250px;
+  height: 42px;
+}
+.bebidas-subtitle span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  top: 35px;
+  background-color: var(--amarillo);
+}
+.bebidas-subtitle h2 {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+}
+.miches-productos {
+  width: 60%;
+  height: auto;
+  margin-top: 36px;
+  bottom: 0;
+}
+.miches-precios-normal, .miches-precios-minis {
+  width: 20%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.miches-productos span {
+  font-size: 1.8rem;
+  line-height: 22px;
+}
+.debajo-grande {
+  padding-top: 55px;
+}
+.cheves-productos {
+  width: 80%;
+  height: auto;
+  margin-top: 20px;
+  bottom: 0;
+}
+.cheves-precios-normal {
+  width: 20%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.cheves-productos span {
+  font-size: 2.0rem;
+  line-height: 22px;
+}
+
+.postres {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+.postres-title {
+  position: absolute;
+  width: 160px;
+  height: 42px;
+
+}
+.postres-title span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  top: 35px;
+  background-color: var(--amarillo);
+}
+.postres-title h2 {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+}
+.postres-precios-normal ul {
+  text-align: center;
+}
+
+.postres-productos {
+  width: 70%;
+  height: auto;
+  margin-top: 50px;
+  bottom: 0;
+}
+.postres-precios-normal {
+  width: 30%;
+  height: auto;
+  margin-top: 50px;
+}
+.extra {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+}
+.extra span {
+  font-size: 2.0rem;
+}
+footer {
+  background-color: var(--amarillo);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+footer section {
+  background-color: var(--rojo);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: auto;
+  min-height: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4px 18px;
+  padding-top: 15px;
+}
+/* footer span,li {
+  
+
+} */
+
+footer .container {
+  width: 50%;  
+}
+
+
+
+.domicilio {
+  width: 50%;
+  height: 88px;
+}
+.domicilio li {
+  font-size: 1.6rem;
+  line-height: 22px;
+}
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.redes span {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 22px;
+}
+
+.footer-logos {
+  display: flex;
+  flex-wrap: wrap;
+  height: 29px;
+  width: auto;
+}
+footer img {
+  width: 29px;
+  height: 29px;
+  margin: 0 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+footer span {
+  font-size: 1.6rem;
+  line-height: 22px;
+}
