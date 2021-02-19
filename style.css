@@ -10,7 +10,8 @@
 html {
   background-image: url(./Images/Fondo.jpg);
   background-attachment: scroll;
-  background-repeat: repeat;
+  background-repeat: repeat-y;
+  background-size: 100%;
   font-family: 'Rancho', cursive;
   font-style: normal;
   font-weight: normal;
@@ -42,6 +43,8 @@ header{
   height: 290px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 header .header-barra {
   display: flex;
@@ -58,16 +61,19 @@ header .header-barra {
   background-color: var(--rojo);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: absolute;
-  width: 215px;
-  height: 164px;
-  top: 14px;
-  left: calc(50% - 215px/2);
+  width: 60%;
+  min-width: 192px;
+  max-width: 228px;
   border-radius: 23px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .fondo-rojo img {
-  width: 175px;
-  height: 152px;
-  margin: 5px 20px;
+  width: 100%;
+  height: auto;
+  padding: 5px 20px;
+
 }
 .header-title {
   position: absolute;
@@ -90,33 +96,58 @@ header .header-barra {
 
 .section-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 0px;
+  width: 100%;
 }
-main .container {
-  width: 90%;
-  min-width: 150px;
-  background-color: var(--rojo);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 36px;
-  margin-bottom: 9px;
-  padding: 15px 10px;
-}
-
-.tortas {
-  height: auto;
+main {
   display: flex;
   flex-wrap: wrap;
 }
-.tortas-title {
+
+main .container {
+  width: 300px;
+  min-width: 300px;
+  background-color: var(--rojo);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 36px;
+  margin: 10px 0;
+  padding: 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .container-img {
+  width: 300px;
+  min-width: 300px;
+  background-color: none;
+  border-radius: 36px;
+  margin: 10px 16px;
+}
+.container-img img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 36px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+ .container p { /*Estos son los comentarios con * */
+  text-align: center;
+  position: relative;
+  width: 131px;
+  height: 22px;
+  left: calc(50% - 131px/2);
+}
+
+.product-title  {
   position: absolute;
-  width: 160px;
+  width: 200px;
   height: 42px;
 
 }
-.tortas-title span {
+.linea-amarilla {
   position: absolute;
   width: 100%;
   height: 6px;
@@ -124,33 +155,28 @@ main .container {
   top: 35px;
   background-color: var(--amarillo);
 }
-.tortas-title h2 {
+.product-title h2 {
   position: absolute;
   width: 100%;
   height: 36px;
   text-align: center;
 }
 
-.tortas-precios-normal, .tortas-precios-minis ul {
-  text-align: center;
-}
-
-.tortas-productos {
+.item-producto-gde-ch {
   width: 60%;
   height: auto;
   margin-top: 77px;
   bottom: 0;
 }
-.tortas-precios-normal, .tortas-precios-minis {
+
+.precio-gde, .precio-ch {
   width: 20%;
   height: auto;
   margin-top: 50px;
 }
 
-.cocolainas {
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
+.precio-gde, .precio-ch ul {
+  text-align: center;
 }
 
 .cocolainas img {
@@ -173,304 +199,49 @@ main .container {
   height: auto;
   margin-top: 65px;
 }
-.cocolainas p {
-  text-align: center;
-  position: relative;
-  width: 131px;
-  height: 22px;
-  left: calc(50% - 131px/2);
-}
 
-.papas {
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-}
-.papas-title {
-  position: absolute;
-  width: 160px;
-  height: 42px;
-
-}
-.papas-title span {
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  border-radius: 5px;
-  top: 35px;
-  background-color: var(--amarillo);
-}
-.papas-title h2 {
-  position: absolute;
-  width: 100%;
-  height: 36px;
-  text-align: center;
-}
-.papas-precios-normal ul {
-  text-align: center;
-}
-
-.papas-productos {
+.item-producto {
   width: 70%;
   height: auto;
   margin-top: 50px;
   bottom: 0;
 }
-.papas-precios-normal {
+.precio-gral {
   width: 30%;
   height: auto;
   margin-top: 50px;
 }
 
-.quesadillas {
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-}
-.quesadillas-title {
-  position: absolute;
-  width: 160px;
-  height: 42px;
-
-}
-.quesadillas-title span {
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  border-radius: 5px;
-  top: 35px;
-  background-color: var(--amarillo);
-}
-.quesadillas-title h2 {
-  position: absolute;
-  width: 100%;
-  height: 36px;
-  text-align: center;
-}
-.quesadillas-precios-normal ul {
+.precio-gral ul {
   text-align: center;
 }
 
-.quesadillas-productos {
-  width: 70%;
-  height: auto;
-  margin-top: 50px;
-  bottom: 0;
-}
-.quesadillas-precios-normal {
-  width: 30%;
-  height: auto;
-  margin-top: 50px;
-}
-.quesadillas p {
-  text-align: center;
-  position: relative;
-  width: 131px;
-  height: 22px;
-  left: calc(50% - 131px/2);
-}
-
-.tacos {
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-}
-.tacos-title {
-  position: absolute;
-  width: 160px;
-  height: 42px;
-
-}
-.tacos-title span {
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  border-radius: 5px;
-  top: 35px;
-  background-color: var(--amarillo);
-}
-.tacos-title h2 {
-  position: absolute;
-  width: 100%;
-  height: 36px;
-  text-align: center;
-}
-.tacos-precios-normal ul {
+.precio-gral-largo ul {
   text-align: center;
 }
 
-.tacos-productos {
+.item-producto-largo {
   width: 80%;
   height: auto;
   margin-top: 50px;
   bottom: 0;
 }
-.tacos-precios-normal {
+.precio-gral-largo {
   width: 20%;
   height: auto;
   margin-top: 50px;
 }
-.tacos-productos span {
+li span {
   font-size: 1.8rem;
   line-height: 22px;
 }
 
-.tacos p {
-  text-align: center;
-  position: relative;
-  width: 131px;
-  height: 22px;
-  left: calc(50% - 131px/2);
-}
-
-.tostadas {
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-}
-.tostadas-title {
-  position: absolute;
-  width: 160px;
-  height: 42px;
-
-}
-.tostadas-title span {
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  border-radius: 5px;
-  top: 35px;
-  background-color: var(--amarillo);
-}
-.tostadas-title h2 {
-  position: absolute;
-  width: 100%;
-  height: 36px;
-  text-align: center;
-}
-.tostadas-precios-normal ul {
-  text-align: center;
-}
-
-.tostadas-productos {
-  width: 70%;
-  height: auto;
-  margin-top: 50px;
-  bottom: 0;
-}
-.tostadas-precios-normal {
-  width: 30%;
-  height: auto;
-  margin-top: 50px;
-}
-
-.cocteles {
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-}
-
-.cocteles-title {
-  position: absolute;
-  width: 200px;
-  height: 42px;
-
-}
-.cocteles-title span {
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  border-radius: 5px;
-  top: 35px;
-  background-color: var(--amarillo);
-}
-.cocteles-title h2 {
-  position: absolute;
-  width: 100%;
-  height: 36px;
-  text-align: center;
-}
-
-.cocteles-precios-normal, .cocteles-precios-minis ul {
-  text-align: center;
-}
-
-.cocteles-productos {
-  width: 60%;
-  height: auto;
-  margin-top: 77px;
-  bottom: 0;
-}
-.cocteles-precios-normal, .cocteles-precios-minis {
-  width: 20%;
-  height: auto;
-  margin-top: 50px;
-}
-
-.snacks {
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-}
-.snacks-title {
-  position: absolute;
-  width: 160px;
-  height: 42px;
-
-}
-.snacks-title span {
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  border-radius: 5px;
-  top: 35px;
-  background-color: var(--amarillo);
-}
-.snacks-title h2 {
-  position: absolute;
-  width: 100%;
-  height: 36px;
-  text-align: center;
-}
-.snacks-precios-normal, .alitas-precios-normal ul {
-  text-align: center;
-}
-
-.snacks-productos {
-  width: 80%;
-  height: auto;
-  margin-top: 50px;
-  bottom: 0;
-}
-.snacks-precios-normal {
-  width: 20%;
-  height: auto;
-  margin-top: 50px;
-}
-.snacks-productos span {
-  font-size: 1.8rem;
-  line-height: 22px;
-}
-.snacks p {
-  text-align: center;
-  position: relative;
-  width: 131px;
-  height: 22px;
-  left: calc(50% - 131px/2);
-}
 .snacks-subtitle {
   position: relative;
   width: 160px;
   height: 42px;
 }
-.snacks-subtitle span {
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  border-radius: 5px;
-  top: 35px;
-  background-color: var(--amarillo);
-}
+
 .snacks-subtitle h2 {
   position: absolute;
   width: 100%;
@@ -488,36 +259,7 @@ main .container {
   height: auto;
   margin-top: 10px;
 }
-.alitas-productos span {
-  font-size: 1.8rem;
-  line-height: 22px;
-}
 
-.bebidas {
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-}
-.bebidas-title {
-  position: absolute;
-  width: 160px;
-  height: 42px;
-
-}
-.bebidas-title span {
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  border-radius: 5px;
-  top: 35px;
-  background-color: var(--amarillo);
-}
-.bebidas-title h2 {
-  position: absolute;
-  width: 100%;
-  height: 36px;
-  text-align: center;
-}
 .bebidas-precios-normal, .alitas-precios-normal ul {
   text-align: center;
   font-size: 1.8rem;
@@ -538,30 +280,13 @@ main .container {
   height: auto;
   margin-top: 50px;
 }
-.bebidas-productos span {
-  font-size: 1.8rem;
-  line-height: 22px;
-}
-.bebidas p {
-  text-align: center;
-  position: relative;
-  width: 131px;
-  height: 22px;
-  left: calc(50% - 131px/2);
-}
+
 .bebidas-subtitle {
   position: relative;
   width: 250px;
   height: 42px;
 }
-.bebidas-subtitle span {
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  border-radius: 5px;
-  top: 35px;
-  background-color: var(--amarillo);
-}
+
 .bebidas-subtitle h2 {
   position: absolute;
   width: 100%;
@@ -580,10 +305,6 @@ main .container {
   margin-top: 10px;
 }
 
-.miches-productos span {
-  font-size: 1.8rem;
-  line-height: 22px;
-}
 .debajo-grande {
   padding-top: 55px;
 }
@@ -603,56 +324,42 @@ main .container {
   font-size: 2.0rem;
   line-height: 22px;
 }
-
-.postres {
+.bebidas-img {
   display: flex;
   flex-wrap: wrap;
-  height: auto;
 }
-.postres-title {
-  position: absolute;
-  width: 160px;
-  height: 42px;
-
-}
-.postres-title span {
-  position: absolute;
-  width: 100%;
-  height: 6px;
-  border-radius: 5px;
-  top: 35px;
-  background-color: var(--amarillo);
-}
-.postres-title h2 {
-  position: absolute;
-  width: 100%;
-  height: 36px;
-  text-align: center;
-}
-.postres-precios-normal ul {
-  text-align: center;
+.subcontainer-img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
 }
 
-.postres-productos {
-  width: 70%;
+.bebidas-img img {
   height: auto;
-  margin-top: 50px;
-  bottom: 0;
+
+
+
 }
-.postres-precios-normal {
-  width: 30%;
-  height: auto;
-  margin-top: 50px;
+.bebidas-img .bebidas-img-1 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
+.bebidas-img .bebidas-img-2 {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .extra {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: auto;
 }
 .extra span {
   font-size: 2.0rem;
 }
+
 footer {
   background-color: var(--amarillo);
   display: flex;
@@ -672,16 +379,10 @@ footer section {
   padding: 4px 18px;
   padding-top: 15px;
 }
-/* footer span,li {
-  
 
-} */
-
-footer .container {
+.footer-container {
   width: 50%;  
 }
-
-
 
 .domicilio {
   width: 50%;
@@ -702,7 +403,6 @@ footer .container {
   font-size: 1.6rem;
   line-height: 22px;
 }
-
 .footer-logos {
   display: flex;
   flex-wrap: wrap;
@@ -718,4 +418,62 @@ footer img {
 footer span {
   font-size: 1.6rem;
   line-height: 22px;
+}
+
+@media (min-width:600px) {
+  .tortas-sec .container {
+    flex-direction: row;
+  }
+  .bebidas-img {
+    box-shadow: none !important;
+    flex-direction: column;
+    max-width: 450px;
+    height: 773px;
+  }
+  .subcontainer-img {
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    padding: 6px 0px;
+    
+  }
+  .bebidas-img .bebidas-img-1 {
+    border-top-right-radius: 36px;
+    border-bottom-right-radius: 36px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .bebidas-img .bebidas-img-2 {
+    border-top-left-radius: 36px;
+    border-bottom-left-radius: 36px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+@media (min-width:1280px) {
+  .tortas-sec {
+    width: 50%;
+  }
+  .cocolainas-sec {
+    width: 50%;
+  }
+  .papas-sec {
+    width: 100%;
+  }
+  .quesadillas-sec {
+    width: 50%;
+  }
+  .tacos-sec {
+    width: 50%;
+  }
+  .tostadas-sec, .cocteles-sec {
+    width: 50%;
+  }
+  .snacks-sec {
+    width: 25%;
+  }
+  .bebidas-sec {
+    width: 50%;
+  }
+  .postres-sec {
+    width: 25%;
+  }
 }
