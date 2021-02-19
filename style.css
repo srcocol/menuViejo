@@ -64,6 +64,8 @@ header .header-barra {
   width: 60%;
   min-width: 192px;
   max-width: 228px;
+  min-height: 141px;
+  max-height: 172px;
   border-radius: 23px;
   display: flex;
   flex-wrap: wrap;
@@ -71,7 +73,7 @@ header .header-barra {
 }
 .fondo-rojo img {
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 5px 20px;
 
 }
@@ -290,7 +292,7 @@ li span {
 .bebidas-subtitle h2 {
   position: absolute;
   width: 100%;
-  height: 36px;
+  font-size: 2.8rem;
   text-align: center;
 }
 .miches-productos {
@@ -327,6 +329,7 @@ li span {
 .bebidas-img {
   display: flex;
   flex-wrap: wrap;
+  max-height: 225px;
 }
 .subcontainer-img {
   display: flex;
@@ -414,14 +417,17 @@ footer section {
   width: auto;
 }
 footer img {
-  width: 29px;
-  height: 29px;
   margin: 0 5px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 footer span {
   font-size: 1.6rem;
   line-height: 22px;
+}
+
+#facebook, #instagram {
+  width: 29px;
+  height: 29px;
 }
 
 @media (min-width:600px) {
@@ -432,14 +438,15 @@ footer span {
     box-shadow: none !important;
     flex-direction: column;
     max-width: 450px;
-    height: 773px;
+    max-height: 773px;
+    height: 733px;
   }
   .subcontainer-img {
     justify-content: center;
     height: 50%;
     width: 100%;
     padding: 6px 0px;
-    
+    max-width: 386px;
   }
   .bebidas-img .bebidas-img-1 {
     border-top-right-radius: 36px;
