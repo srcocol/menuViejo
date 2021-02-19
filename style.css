@@ -377,16 +377,20 @@ footer section {
   flex-wrap: wrap;
   justify-content: center;
   padding: 4px 18px;
-  padding-top: 15px;
 }
 
 .footer-container {
   width: 50%;  
 }
+.domicilio ul {
+  padding: 0px 9px;
+}
 
 .domicilio {
   width: 50%;
-  height: 88px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .domicilio li {
   font-size: 1.6rem;
@@ -446,6 +450,10 @@ footer span {
     border-top-left-radius: 36px;
     border-bottom-left-radius: 36px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  footer .domicilio ul {
+    padding: 0px 9px;
+    align-items: center;
   }
 }
 @media (min-width:1280px) {
