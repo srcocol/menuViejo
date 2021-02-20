@@ -10,8 +10,7 @@
 html {
   background-image: url(./Images/Fondo.jpg);
   background-attachment: scroll;
-  background-repeat: repeat-y;
-  background-size: 100%;
+  background-repeat: repeat;
   font-family: 'Rancho', cursive;
   font-style: normal;
   font-weight: normal;
