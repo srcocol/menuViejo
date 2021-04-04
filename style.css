@@ -409,11 +409,12 @@ footer section {
   font-size: 1.6rem;
   line-height: 22px;
 }
-.footer-logos {
+.footer-logos, .footer-phone {
   display: flex;
   flex-wrap: wrap;
   height: 29px;
   width: auto;
+  margin: 10px 0;
 }
 footer img {
   margin: 0 5px;
@@ -424,9 +425,13 @@ footer span {
   line-height: 22px;
 }
 
-#facebook, #instagram {
+#facebook, #instagram, #phone {
   width: 29px;
   height: 29px;
+}
+#phone-number {
+  vertical-align: middle;
+  padding: 6px;
 }
 
 @media (min-width:600px) {
