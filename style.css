@@ -415,6 +415,11 @@ footer section {
   height: 29px;
   width: auto;
   margin: 10px 0;
+  align-items: center;
+}
+.footer-phone a {
+  text-decoration: none;
+  color: white;
 }
 footer img {
   margin: 0 5px;
