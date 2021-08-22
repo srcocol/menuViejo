@@ -109,8 +109,9 @@ main {
 }
 
 main .container {
-  width: 300px;
+  width: 90%;
   min-width: 300px;
+  max-width: 330px;
   background-color: var(--rojo);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 36px;
@@ -132,6 +133,26 @@ main .container-img {
   max-width: 100%;
   border-radius: 36px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+main .container-img-slider {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;        
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  width: 100%;
+  /* max-width: 300px; */
+  background-color: none;
+  /* border-radius: 36px; */
+  /* margin: 10px 16px; */
+}
+.container-img-slider img {
+  /* max-height: 100%; */
+  /* height: auto; */
+  max-width: 90%;
+  border-radius: 36px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 5px;
 }
 
  .container p { /*Estos son los comentarios con * */
