@@ -140,12 +140,10 @@ main .container-img-slider {
   overflow-x: scroll;        
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
-  width: 100%;
   align-items: center;
   /* max-height: 250px; */
   /* background-color: none; */
   border-radius: 36px;
-  justify-content: center;
 }
 .container-img-slider img {
   max-height: 350px;
